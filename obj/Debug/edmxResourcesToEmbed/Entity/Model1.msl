@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище PR23101_16_RK2025ModelContainer" CdmEntityContainer="PR23101_16_RK2025Entities1">
+    <EntitySetMapping Name="Attestation">
+      <EntityTypeMapping TypeName="PR23101_16_RK2025Model.Attestation">
+        <MappingFragment StoreEntitySet="Attestation">
+          <ScalarProperty Name="IdAttestation" ColumnName="IdAttestation" />
+          <ScalarProperty Name="IdDiscipline" ColumnName="IdDiscipline" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="IdTeachers" ColumnName="IdTeachers" />
+          <ScalarProperty Name="IdGroup" ColumnName="IdGroup" />
+          <ScalarProperty Name="IdTypeAttestation" ColumnName="IdTypeAttestation" />
+          <ScalarProperty Name="Сompleted" ColumnName="Сompleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Criteria">
+      <EntityTypeMapping TypeName="PR23101_16_RK2025Model.Criteria">
+        <MappingFragment StoreEntitySet="Criteria">
+          <ScalarProperty Name="IdCriteria" ColumnName="IdCriteria" />
+          <ScalarProperty Name="IdDiscipline" ColumnName="IdDiscipline" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="NumberOfPionts" ColumnName="NumberOfPionts" />
+          <ScalarProperty Name="WithdrawPercent" ColumnName="WithdrawPercent" />
+          <ScalarProperty Name="RemoveAPoint" ColumnName="RemoveAPoint" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Discipline">
+      <EntityTypeMapping TypeName="PR23101_16_RK2025Model.Discipline">
+        <MappingFragment StoreEntitySet="Discipline">
+          <ScalarProperty Name="IdDiscipline" ColumnName="IdDiscipline" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DisciplineTeachers">
+      <EntityTypeMapping TypeName="PR23101_16_RK2025Model.DisciplineTeachers">
+        <MappingFragment StoreEntitySet="DisciplineTeachers">
+          <ScalarProperty Name="IdDiscipline" ColumnName="IdDiscipline" />
+          <ScalarProperty Name="IdTeacher" ColumnName="IdTeacher" />
+          <ScalarProperty Name="IdDisciplineTeachers" ColumnName="IdDisciplineTeachers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Group">
+      <EntityTypeMapping TypeName="PR23101_16_RK2025Model.Group">
+        <MappingFragment StoreEntitySet="Group">
+          <ScalarProperty Name="IdGroup" ColumnName="IdGroup" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="CourseNumber" ColumnName="CourseNumber" />
+          <ScalarProperty Name="IdSpeciality" ColumnName="IdSpeciality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="PR23101_16_RK2025Model.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Speciality">
+      <EntityTypeMapping TypeName="PR23101_16_RK2025Model.Speciality">
+        <MappingFragment StoreEntitySet="Speciality">
+          <ScalarProperty Name="IdSpeciality" ColumnName="IdSpeciality" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusStudent">
+      <EntityTypeMapping TypeName="PR23101_16_RK2025Model.StatusStudent">
+        <MappingFragment StoreEntitySet="StatusStudent">
+          <ScalarProperty Name="IdStatusStudent" ColumnName="IdStatusStudent" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusTeacher">
+      <EntityTypeMapping TypeName="PR23101_16_RK2025Model.StatusTeacher">
+        <MappingFragment StoreEntitySet="StatusTeacher">
+          <ScalarProperty Name="IdStatusTeacher" ColumnName="IdStatusTeacher" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Student">
+      <EntityTypeMapping TypeName="PR23101_16_RK2025Model.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="IdStudent" ColumnName="IdStudent" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="IdGroup" ColumnName="IdGroup" />
+          <ScalarProperty Name="IdSpeciality" ColumnName="IdSpeciality" />
+          <ScalarProperty Name="IdStatusStudent" ColumnName="IdStatusStudent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentResult">
+      <EntityTypeMapping TypeName="PR23101_16_RK2025Model.StudentResult">
+        <MappingFragment StoreEntitySet="StudentResult">
+          <ScalarProperty Name="IdStudentResult" ColumnName="IdStudentResult" />
+          <ScalarProperty Name="IdStudent" ColumnName="IdStudent" />
+          <ScalarProperty Name="IdCriteria" ColumnName="IdCriteria" />
+          <ScalarProperty Name="NumberOfPointsForCriteria" ColumnName="NumberOfPointsForCriteria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemUser">
+      <EntityTypeMapping TypeName="PR23101_16_RK2025Model.SystemUser">
+        <MappingFragment StoreEntitySet="SystemUser">
+          <ScalarProperty Name="IdSystemUsers" ColumnName="IdSystemUsers" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teachers">
+      <EntityTypeMapping TypeName="PR23101_16_RK2025Model.Teachers">
+        <MappingFragment StoreEntitySet="Teachers">
+          <ScalarProperty Name="IdTeachers" ColumnName="IdTeachers" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="IdStatusTeachers" ColumnName="IdStatusTeachers" />
+          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+          <ScalarProperty Name="IdSpeciality" ColumnName="IdSpeciality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeAttestation">
+      <EntityTypeMapping TypeName="PR23101_16_RK2025Model.TypeAttestation">
+        <MappingFragment StoreEntitySet="TypeAttestation">
+          <ScalarProperty Name="IdTypeAttestation" ColumnName="IdTypeAttestation" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vedomosti">
+      <EntityTypeMapping TypeName="PR23101_16_RK2025Model.Vedomosti">
+        <MappingFragment StoreEntitySet="Vedomosti">
+          <ScalarProperty Name="IdVedomosti" ColumnName="IdVedomosti" />
+          <ScalarProperty Name="IdAttestation" ColumnName="IdAttestation" />
+          <ScalarProperty Name="IdStudent" ColumnName="IdStudent" />
+          <ScalarProperty Name="TheNumberOfPointsForTheExam" ColumnName="TheNumberOfPointsForTheExam" />
+          <ScalarProperty Name="FinalGrade" ColumnName="FinalGrade" />
+          <ScalarProperty Name="RecordingDate" ColumnName="RecordingDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
