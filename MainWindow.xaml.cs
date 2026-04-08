@@ -18,9 +18,7 @@ namespace PR23101_Fleer_2
 {
     public partial class MainWindow : Window
     {
-        // Инициализация сущностей базы данных (имя зависит от того, как ты назвал Entity модель)
-        // Обычно это имя базы данных + Entities, например AISEntities.
-        // Замени AISEntities на реальный класс контекста твоей БД.
+        
         private PR23101_16_RK2025Entities1 _context = new PR23101_16_RK2025Entities1();
 
         public MainWindow()
